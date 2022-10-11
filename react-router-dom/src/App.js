@@ -9,6 +9,7 @@ import Apple from './Product/Apple'
 import Orange from './Product/Orange'
 import Banana from './Product/Banana'
 
+import Search from './Product/Search/Search'
 
 function App() {
   console.log("App js loaded")  
@@ -20,14 +21,17 @@ function App() {
   Pages are :   
   <Routes>
 
-
+  {/* <Route    path=":userId" element={<Apple />} /> */}
+   
+  <Route    path="search" element={<Search />}  />
  <Route    path="About" element={<About />} />
    <Route    path="Home" element={<Home />} />
    <Route    path="Product" element={<Product />}  >
-     <Route    path="Apple" element={<Apple />} />
+   
+     <Route    path="Apple/:userId" element={<Apple />} />
      <Route    path="Orange" element={<Orange />} />
-     <Route    path="Banana" element={<Banana />} >
 
+     <Route    path="Banana" element={<Banana />} >
       <Route index element={<A/>} />
       {/* Index is used for default rendering  */}
 
