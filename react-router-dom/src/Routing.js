@@ -44,7 +44,7 @@ const NavBar=()=>{
 <nav>
 <NavLink to="/Home" style={state=>styl(state)}  >Home </NavLink>
 <NavLink to="/About"  style={state=>styl(state)} >About </NavLink>
-
+<NavLink to="/Product"  style={state=>styl(state)} >Product </NavLink>
 </nav>
 </>)
 
