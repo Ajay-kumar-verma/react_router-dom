@@ -11,6 +11,9 @@ import Orange from './Product/Orange'
 import Banana from './Product/Banana'
 
 import Search from './Product/Search/Search'
+import  Profile  from './Product/Profile/Profile';
+import Required from './Required';
+import Login from './Login';
 
 const LazyData=React.lazy(()=>import('./Data'));
 
@@ -24,10 +27,10 @@ function App() {
   Pages are :   
   <Routes>
 
-  {/* <Route    path=":userId" element={<Apple />} /> */}
-   
-
+   <Route path='login'  element={<Login />} /> 
   <Route    path="search" element={<Search />}  />
+  <Route path="Profile" element={<Required> <Profile /> </Required> }  />
+
  <Route    path="About" element={<About />} />
    <Route    path="Home" element={<Home />} />
    <Route    path="Product" element={<Product />}  >

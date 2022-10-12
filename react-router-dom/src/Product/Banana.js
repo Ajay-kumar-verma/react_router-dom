@@ -16,6 +16,8 @@ return (<>
         <NavLink  to="A" style={state=>styl(state)} >A </NavLink>
         <NavLink to="B"  style={state=>styl(state)} >B </NavLink>
         <NavLink to="C"  style={state=>styl(state)} >C </NavLink>
+        <NavLink to="/Profile"  style={state=>styl(state)} >Profile </NavLink>
+       
         </nav>
         <Outlet />
     </>)
